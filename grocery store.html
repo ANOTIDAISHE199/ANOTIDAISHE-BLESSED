@@ -1,0 +1,87 @@
+<DOCTYPE html>
+<html>
+<head> 
+    <script>
+        function cal1(){
+            var Qty=document.getElementById("Q1").value;
+             var amt=eval(Qty*80);
+            document.getElementById("div1").innerHTML=amt;
+            document.getElementById("Gross").innerHTML=eval(amt+"+"+document.getElementById("Gross").innerHTML);
+        }
+         function cal2(){
+            var Qty=document.getElementById("Q2").value;
+            var amt=eval(Qty*40);
+            document.getElementById("div2").innerHTML=amt;
+            document.getElementById("Gross").innerHTML=eval(amt+"+"+document.getElementById("Gross").innerHTML);
+        }
+         function cal3(){
+            var Qty=document.getElementById("Q3").value;
+            var amt=eval(Qty*35);
+            document.getElementById("div3").innerHTML=amt;
+            document.getElementById("Gross").innerHTML=eval(amt+"+"+document.getElementById("Gross").innerHTML);
+        }
+         function cal4(){
+            var Qty=document.getElementById("Q4").value;
+            var amt=eval(Qty*45);
+            document.getElementById("div4").innerHTML=amt;
+            document.getElementById("Gross").innerHTML=eval(amt+"+"+document.getElementById("Gross").innerHTML);
+        }
+       
+    </script>
+    
+    <title>RMC Grocery Store</title> </head>
+    <body bgcolor="aqua">
+
+<h1><center>
+    Grocery Store
+    </center>
+</h1>
+<center>
+<table border="5" >
+    <tr>
+        <th>Sr#</th>
+        <th>Item</th>
+        <th>Price/Unit</th>
+        <th>Qty</th>
+        <th>Amount</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Rice</td>
+        <td>80 INR/Kg</td>
+        <td><input type="text" id="Q1" onchange="cal1();"></td>
+        <td><div id="div1">0</div></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Wheat</td>
+        <td>40 INR/Kg</td>
+        <td><input type="text" id="Q2" onchange="cal2();"></td>
+        <td><div id="div2">0</div></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Hair Oil</td>
+        <td>35 INR/Kg</td>
+        <td><input type="text" id="Q3" onchange="cal3();"></td>
+        <td><div id="div3">0</div></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Soap</td>
+        <td>45 INR/Kg</td>
+        <td><input type="text" id="Q4" onchange="cal4();"></td>
+        <td><div id="div4">0</div></td>
+    </tr>
+    <tr>
+        <td colspan="3"> Total Bill Amount(INR)</td>
+         <td colspan="2" > <center>
+            <div id="Gross">0</div></td>
+         </center>
+    </tr>
+
+</table>
+</center>
+</body>
+
+</html>
